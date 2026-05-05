@@ -2,7 +2,6 @@
 🌐 Live Demo: https://fieldzone.wuaze.com
 #  FieldZone - Stadium Reservation & E-Commerce Platform
 
-![Project Status](https://img.shields.io/badge/Status-Completed-success)
 ![Tech Stack](https://img.shields.io/badge/Tech_Stack-HTML5_%7C_CSS3_%7C_JS_%7C_PHP_%7C_MySQL-blue)
 
 FieldZone is a full-stack web application designed to streamline the process of booking sports stadiums, purchasing athletic gear, and managing sports club memberships. It features a responsive front-end interface and a robust PHP/MySQL back-end for secure data handling and order management.
