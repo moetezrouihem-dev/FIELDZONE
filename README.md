@@ -63,17 +63,6 @@ The application relies on two primary tables:
 1.  `commandes`: Stores all reservation and purchase data (Client Name, Phone, Stadium, Date, Time, Merchandise Quantities, Total Price).
 2.  `messages_contact`: Stores inquiries sent via the contact form (Name, Email, Subject, Message content).
 
----
-
-## 📸 Screenshots
-
-*(Replace these placeholders with actual screenshots of your website)*
-
-*   **Homepage:** `![Homepage](link-to-image)`
-*   **Reservation Form:** `![Reservation](link-to-image)`
-*   **Admin Dashboard:** `![Dashboard](link-to-image)`
-
----
 
 ## 👤 Author
 
