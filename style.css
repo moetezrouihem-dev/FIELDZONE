@@ -1,0 +1,590 @@
+:root {
+    --primary-color: #27ae60;
+    --primary-dark: #1e8449;
+    --dark-bg: #111;
+    --text-light: #fff;
+    --text-dark: #333;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+}
+
+body {
+    background-color: #f8f9fa;
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.logo-text span {
+    color: var(--primary-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.nav-links li a:hover, .nav-links li a.active {
+    color: var(--primary-color);
+}
+
+.nav-links li.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a1a1a;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    list-style: none;
+    padding: 10px 0;
+    border-top: 3px solid var(--primary-color);
+    z-index: 1000;
+}
+
+.dropdown-menu li a {
+    padding: 12px 20px;
+    display: block;
+    color: white;
+    font-size: 14px;
+}
+
+.dropdown-menu li a:hover {
+    color: white ;
+    background-color: var(--primary-color);
+    padding-left: 25px;
+}
+.dropdown:hover .dropdown-menu { display: block; animation: fadeInDown 0.3s ease; }
+
+
+
+
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('54494.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content h1 span {
+    color: var(--primary-color);
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    color: #ddd;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 5%;
+    gap: 30px;
+    background-color: white;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    background: #fff;
+    border-bottom: 4px solid transparent;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+
+
+
+
+
+.quick-access {
+    display: flex;
+    height: 400px;
+}
+
+.access-card {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: flex 0.4s ease;
+}
+
+.access-card:hover { flex: 1.2; }
+
+.access-card::before {
+    content: '';
+    position: absolute;
+    top:0; left:0; width:100%; height:100%;
+    background: rgba(0,0,0,0.5);
+    transition: background 0.3s ease;
+}
+
+.access-card:hover::before { background: rgba(0,0,0,0.3); }
+
+.bg-stade { background-image: url('football-ground-flooring-service-500x500.webp'); }
+.bg-boutique { background-image: url('photo-1511886929837-354d827aae26.avif'); }
+.bg-club { background-image: url('babdida_wigo.tn2_.jpg'); }
+
+.access-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+}
+
+.access-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.btn-primary { background-color: var(--primary-color); color: white; border: 2px solid var(--primary-color); }
+.btn-primary:hover { background-color: transparent; color: var(--primary-color); }
+
+.btn-outline { background-color: transparent; color: white; border: 2px solid white; }
+.btn-outline:hover { background-color: white; color: var(--text-dark); }
+
+.btn-white { background-color: white; color: var(--text-dark); }
+.btn-white:hover { background-color: var(--primary-color); color: white; }
+
+.btn-reserver {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+}
+.btn-reserver:hover { background-color: var(--primary-dark); }
+
+
+
+
+
+
+.stadium-section { padding: 60px 5%; background-color: #f4f6f8; }
+.section-title { text-align: center; margin-bottom: 50px; font-size: 2.5rem; color: #333; }
+.stadium-grid { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+
+.stadium-card {
+    background: white;
+    width: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.stadium-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+
+.stadium-img-container { position: relative; height: 200px; }
+.stadium-img-container img { width: 100%; height: 100%; object-fit: cover; }
+
+.price-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.price-badge strong { font-size: 24px; display: block; line-height: 1; }
+
+.stadium-info { padding: 20px; text-align: center; }
+.stadium-info h3 { font-size: 18px; color: #333; margin-bottom: 5px; }
+.stadium-category { font-size: 12px; color: #888; margin-bottom: 10px; }
+.stars { color: #888; font-size: 12px; margin-bottom: 15px; }
+
+.stadium-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+.stadium-stats .location { color: var(--primary-color); font-weight: bold; }
+
+
+
+
+
+
+.boutique-header {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('adi-ldn-2-min.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.shop-container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+
+.category-title {
+    font-size: 26px;
+    margin: 50px 0 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--primary-color);
+    color: #333;
+}
+
+.product-grid {display: grid ;  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; }
+
+.product-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+.product-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+
+.product-card img { width: 100%; height: 250px; object-fit: contain; padding: 20px; background: #f9f9f9; }
+
+.product-info { padding: 20px; text-align: center; }
+.product-info h3 { font-size: 18px; margin-bottom: 10px; color: #333; height: 45px; }
+.product-info .price { font-size: 22px; font-weight: bold; color: var(--primary-color); margin-bottom: 15px; }
+
+.btn-buy {
+    display: block;
+    background: var(--dark-bg);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn-buy:hover { background: var(--primary-color); }
+
+
+
+
+
+.flexzone-header {
+    background: #111;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('salle-de-sport.jpg');
+    background-size: cover ;
+    color: white; text-align: center;
+    padding: 80px 20px;
+ }
+.flexzone-header h1 { font-size: 36px; margin-bottom: 10px; }
+.flexzone-header span { color: var(--primary-color); }
+
+.flexzone-gallery { display: flex; gap: 20px; padding: 40px 5%; justify-content: center; flex-wrap: wrap; }
+.gallery-img { width: 30%; min-width: 300px; height: 250px; object-fit: cover; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+
+.flexzone-pricing { display: flex; justify-content: center; padding: 20px 5% 80px; }
+.pricing-card {
+    background: white; border: 2px solid var(--primary-color); border-radius: 15px;
+    padding: 40px; text-align: center; width: 100%; max-width: 450px;
+    box-shadow: 0 10px 30px rgba(39, 174, 96, 0.2);
+}
+.pricing-card h2 { color: #333; margin-bottom: 20px; }
+.pricing-card .price { font-size: 3.5rem; font-weight: bold; color: var(--primary-color); margin-bottom: 20px; }
+.pricing-card .price span { font-size: 1.2rem; color: #888; }
+.pricing-features { list-style: none; margin-bottom: 30px; text-align: left; }
+.pricing-features li { padding: 12px 0; border-bottom: 1px solid #eee; color: #555; font-size: 16px; }
+
+
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    max-width: 1100px;
+    margin: 60px auto;
+    background: #f4f7f6; 
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.contact-info {
+    background-color: #151515;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info h2 { color: var(--primary-color); font-size: 32px; margin-bottom: 15px; line-height: 1.2; }
+.contact-info p { color: #ddd; font-size: 16px; margin-bottom: 20px; }
+
+.info-item {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.contact-form-box { padding: 50px; background: #f4f7f6; }
+
+.contact-form-box h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: #444; }
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    background: white;
+    transition: border 0.3s;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+
+
+
+
+footer {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    padding: 60px 5% 20px;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-logo span { color: var(--primary-color); }
+
+.footer-contact { display: flex; gap: 40px; }
+.footer-contact p { font-size: 15px; color: #ccc; }
+
+.footer-bottom { text-align: center; font-size: 14px; color: #888; }
+
+
+
+
+
+.animate-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInDown {
+    from { 
+        opacity: 0; 
+        transform: translateY(-10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .nav-links { display: none; }
+    .hero-content h1 { font-size: 2.5rem; }
+    .features { flex-direction: column; }
+    .quick-access { flex-direction: column; height: auto; }
+    .access-card { height: 300px; }
+    .contact-container { grid-template-columns: 1fr; margin: 20px; }
+    .footer-content { flex-direction: column; gap: 30px; text-align: center; }
+    .footer-contact { flex-direction: column; gap: 15px; }
+}
+
+
+
+
+
+.table-container {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-x: auto; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.pricing-table {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+
+.pricing-table thead {
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.pricing-table th {
+    padding: 18px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pricing-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    font-size: 16px;
+}
+
+.pricing-table tbody tr:hover {
+    background-color: #f1f8f4;
+    transition: background-color 0.3s;
+}
+
