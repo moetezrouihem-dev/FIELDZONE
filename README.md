@@ -1,6 +1,6 @@
 # FIELDZONE
 🌐 Live Demo: https://fieldzone.wuaze.com
-# ⚽ FieldZone - Stadium Reservation & E-Commerce Platform
+#  FieldZone - Stadium Reservation & E-Commerce Platform
 
 ![Project Status](https://img.shields.io/badge/Status-Completed-success)
 ![Tech Stack](https://img.shields.io/badge/Tech_Stack-HTML5_%7C_CSS3_%7C_JS_%7C_PHP_%7C_MySQL-blue)
@@ -9,7 +9,7 @@ FieldZone is a full-stack web application designed to streamline the process of 
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 *   **Smart Booking System:** Users can select stadiums, dates, and times. The system includes backend validation to completely prevent double-booking of the same stadium at the same time.
 *   **Integrated E-Commerce:** A dedicated boutique section for purchasing jerseys, hoodies, and fitness equipment.
@@ -20,7 +20,7 @@ FieldZone is a full-stack web application designed to streamline the process of 
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 *   **Front-End:** HTML, CSS, JavaScript
 *   **Back-End:** PHP 
@@ -29,7 +29,7 @@ FieldZone is a full-stack web application designed to streamline the process of 
 
 ---
 
-## 🚀 Getting Started (Local Setup)
+##  Getting Started (Local Setup)
 
 To get a local copy up and running on your machine, follow these simple steps.
 
@@ -56,7 +56,7 @@ You need to have a local server environment installed on your computer. We recom
    Open your browser and navigate to: https://fieldzone.wuaze.com
 ---
 
-## 🗄️ Database Schema
+##  Database Schema
 
 The application relies on two primary tables:
 
@@ -64,7 +64,7 @@ The application relies on two primary tables:
 2.  `messages_contact`: Stores inquiries sent via the contact form (Name, Email, Subject, Message content).
 
 
-## 👤 Author
+##  Author
 
 **Moetez Rouihem**
 *   GitHub: https://github.com/moetezrouihem-dev
@@ -72,4 +72,4 @@ The application relies on two primary tables:
 
 ---
 
-⭐️ *If you found this project interesting or helpful, please consider giving it a star!*
+ *If you found this project interesting or helpful, please consider giving it a star!*
